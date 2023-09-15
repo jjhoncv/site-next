@@ -1,0 +1,26 @@
+.searchBar {
+  float: right;
+  width: 100%;
+  display: flex;
+}
+.field {
+  width: calc(100% - 50px);
+  height: 40px;
+  border: 1px solid $primary-color;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 6px 16px;
+  &::placeholder {
+    color: $txt-primary;
+  }
+}
+.button {
+  width: 50px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: $primary-color;
+  height: 40px;
+}
