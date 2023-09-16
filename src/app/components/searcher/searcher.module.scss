@@ -1,6 +1,6 @@
 .search {
   width: 100%;
-  @include devices(desktop) {
+  @include devices(tablet) {
     width: auto;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
 .searchBar {
   width: 100%;
   display: flex;
-  @include devices(desktop) {
+  @include devices(tablet) {
     width: 400px;
   }
 }

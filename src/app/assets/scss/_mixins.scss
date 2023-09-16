@@ -1,6 +1,26 @@
 @mixin devices($breakpoint) {
   @if $breakpoint==desktop {
-    @media only screen and (min-width: #{$mobile + 1}px) {
+    @media only screen and (min-width: #{$desktop + 1}px) {
+      @content;
+    }
+  }
+  @if $breakpoint==desktop-small {
+    @media only screen and (min-width: #{$desktop-small + 1}px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: #{$tablet + 1}px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile-large {
+    @media only screen and (max-width: #{$mobile-large + 1}px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: #{$mobile + 1}px) {
       @content;
     }
   }
@@ -12,7 +32,7 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @media (min-width: 1460px) {
+  @include devices(desktop) {
     width: 1430px;
     max-width: 100%;
   }

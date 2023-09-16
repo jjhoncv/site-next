@@ -1,15 +1,12 @@
-import Image from "next/image";
-import styles from "./header.module.scss";
-import stylesBase from "./../../assets/scss/base.module.scss";
-import { Navigation } from "../navigation";
-import { Searcher } from "../searcher";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { Cart } from "../cart";
 import { Favorite } from "../favorite";
-import { User } from "../user";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { Logo } from "../logo";
+import { Navigation } from "../navigation";
+import { Searcher } from "../searcher";
+import { User } from "../user";
+import stylesBase from "./../../assets/scss/base.module.scss";
+import styles from "./header.module.scss";
 
 export const Header = () => {
   return (

@@ -1,13 +1,13 @@
-import stylesBase from "./../../assets/scss/base.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import stylesBase from "./../../assets/scss/base.module.scss";
+
 export const User = () => {
   return (
     <div className={stylesBase.iconHeaderRight}>
       <PersonOutlineOutlinedIcon
         stroke="white"
         strokeWidth={0.8}
-        sx={{ fontSize: 34 }}
+        sx={{ fontSize: 37 }}
       />
     </div>
   );

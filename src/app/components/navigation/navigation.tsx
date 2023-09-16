@@ -1,10 +1,11 @@
 import styles from "./navigation.module.scss";
+import stylesBase from "./../../assets/scss/base.module.scss";
 
 export const Navigation = () => {
   return (
     <>
-      <div className="mobile-nav hidden-desktop"></div>
-      <div className="desktop-nav">
+      <div className={`${styles.mobileNav} ${stylesBase.hiddenDesktop}`}></div>
+      <div className={`${styles.desktopNav} ${stylesBase.hiddenMobile}`}>
         <ul className={styles.container}>
           <li className="category">
             <a href="#">Fashion</a>

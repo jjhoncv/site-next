@@ -4,15 +4,27 @@
   color: #fff;
 }
 .headerBlock {
-  padding: 11px 0;
+  padding: 13px 0;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  li {
+    margin: 0 20px;
+  }
+  @include devices(mobile-large) {
+    display: none;
+  }
+  @include devices(tablet) {
+    justify-content: space-between;
+    li {
+      margin: 0;
+    }
+  }
 
   li {
     position: relative;
     padding: 0;
-    @include devices(desktop) {
+    @include devices(tablet) {
       padding-left: 35px;
     }
     &:after {
@@ -37,13 +49,18 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.headerTopInner {
+  @include devices(tablet) {
+    border-top: 1px solid $scale-gray-01;
+  }
+}
 .leftNav {
   display: inline-block;
 }
 .rightNav {
   width: 100%;
 
-  @include devices(desktop) {
+  @include devices(tablet) {
     float: right;
     width: auto;
   }
@@ -59,31 +76,32 @@
 .containerTop {
   @include container;
   position: relative;
-  @include devices(desktop) {
+  @include devices(tablet) {
     display: flex;
     justify-content: space-between;
+    min-height: 90px;
+    align-items: center;
   }
 }
 .mobileHambuger {
   display: block;
   float: left;
-  padding: 8px 5px 0 0;
+  padding: 8px 10px 0 0;
 }
 .right {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 7px;
+  top: 4px;
   right: 15px;
 
-  @include devices(desktop) {
+  @include devices(tablet) {
     position: static;
-  }
-
-  div {
-    margin-left: 10px;
-    &:first-child {
-      margin: 0;
+    div {
+      margin-left: 10px;
+      &:first-child {
+        margin: 0;
+      }
     }
   }
 }
