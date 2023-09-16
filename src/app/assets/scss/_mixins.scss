@@ -1,13 +1,16 @@
+@mixin devices($breakpoint) {
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: #{$mobile + 1}px) {
+      @content;
+    }
+  }
+}
+
 @mixin container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media (min-width: 992px) {
-    width: 100%;
-    max-width: 100%;
-  }
 
   @media (min-width: 1460px) {
     width: 1430px;

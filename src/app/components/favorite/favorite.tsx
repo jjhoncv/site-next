@@ -1,10 +1,14 @@
-import styles from "./favorite.module.scss";
+import stylesBase from "./../../assets/scss/base.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 export const Favorite = () => {
   return (
-    <div>
-      <FontAwesomeIcon icon={faHeart} style={{ color: "#222", width: 25 }} />
+    <div className={stylesBase.iconHeaderRight}>
+      <FavoriteBorderOutlinedIcon
+        stroke="white"
+        strokeWidth={0.8}
+        sx={{ fontSize: 28 }}
+      />
     </div>
   );
 };

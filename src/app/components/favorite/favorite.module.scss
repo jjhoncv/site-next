@@ -1,0 +1,10 @@
+.icon {
+  cursor: pointer;
+  &:hover {
+    svg {
+      path {
+        color: $primary-color;
+      }
+    }
+  }
+}

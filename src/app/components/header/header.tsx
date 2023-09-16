@@ -8,13 +8,15 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Cart } from "../cart";
 import { Favorite } from "../favorite";
 import { User } from "../user";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import { Logo } from "../logo";
 
 export const Header = () => {
   return (
     <header>
       <div className={styles.headerNav}>
         <div className={styles.container}>
-          <div className={styles.leftNav}>
+          <div className={`${styles.leftNav} ${stylesBase.hiddenMobile}`}>
             <div className={styles.headerBlock}>
               Summer sale for all fashion clothes - off 50%! Shop Now
             </div>
@@ -42,30 +44,20 @@ export const Header = () => {
           <div
             className={`${styles.mobileHambuger} ${stylesBase.hiddenDesktop}`}
           >
-            <FontAwesomeIcon
-              icon={faBars}
-              style={{ color: "#222222", width: 20 }}
+            <MenuOutlinedIcon
+              stroke="white"
+              strokeWidth={0.8}
+              sx={{ fontSize: 30 }}
             />
           </div>
-          <div className={stylesBase.logo}>
-            <a href="http://">
-              <Image
-                src="/next.svg"
-                alt="Vercel Logo"
-                className="dark:invert"
-                width={100}
-                height={35}
-                priority
-              />
-            </a>
-          </div>
+
+          <Logo />
+
+          <Searcher />
           <div className={styles.right}>
             <Favorite />
             <User />
             <Cart />
-          </div>
-          <div className={styles.search}>
-            <Searcher />
           </div>
         </div>
       </div>

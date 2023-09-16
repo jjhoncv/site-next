@@ -6,12 +6,18 @@
 .headerBlock {
   padding: 11px 0;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+
   li {
     position: relative;
-    padding-left: 35px;
+    padding: 0;
+    @include devices(desktop) {
+      padding-left: 35px;
+    }
     &:after {
       content: "";
-      border-right: 1px solid #84c4ac;
+      border-right: 1px solid $primary-color-light;
       right: -20px;
       position: absolute;
       height: 19px;
@@ -35,7 +41,12 @@
   display: inline-block;
 }
 .rightNav {
-  float: right;
+  width: 100%;
+
+  @include devices(desktop) {
+    float: right;
+    width: auto;
+  }
 }
 .headerNav a {
   color: #ffffff;
@@ -47,21 +58,32 @@
 }
 .containerTop {
   @include container;
+  position: relative;
+  @include devices(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .mobileHambuger {
   display: block;
   float: left;
-  padding: 9px 15px 0 0;
+  padding: 8px 5px 0 0;
 }
 .right {
-  float: right;
   display: flex;
   align-items: center;
-  padding-top: 8px;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+
+  @include devices(desktop) {
+    position: static;
+  }
+
   div {
     margin-left: 10px;
+    &:first-child {
+      margin: 0;
+    }
   }
-}
-.search {
-  width: 100%;
 }
