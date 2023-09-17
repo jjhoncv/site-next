@@ -6,7 +6,7 @@ export const Logo = () => {
     <div className={styles.wrapperLogo}>
       <a className={styles.innerLogo} href="http://">
         <Image
-          src="/next.svg"
+          src="/shopee.svg"
           alt="Vercel Logo"
           fill
           style={{ objectFit: "contain" }}

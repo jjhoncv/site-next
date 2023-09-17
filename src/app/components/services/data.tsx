@@ -18,16 +18,16 @@ export const data = [
   {
     icon: <RestoreIcon {...IconProps} />,
     title: "Easy 30 Day Returns",
-    description: "Order Above $100",
+    description: "Back Returns In 7 Days",
   },
   {
     icon: <WorkspacePremiumIcon {...IconProps} />,
     title: "Money Back Guarantee",
-    description: "Order Above $100",
+    description: "Guarantee With In 30 Days",
   },
   {
     icon: <SupportAgentIcon {...IconProps} />,
     title: "Easy Online Support",
-    description: "Order Above $100",
+    description: "Any Time Support",
   },
 ];
