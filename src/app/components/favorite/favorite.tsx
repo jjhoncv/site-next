@@ -3,7 +3,7 @@ import stylesBase from "./../../assets/scss/base.module.scss";
 
 export const Favorite = () => {
   return (
-    <div className={stylesBase.iconHeaderRight}>
+    <div>
       <FavoriteBorderOutlinedIcon
         stroke="white"
         strokeWidth={0.6}

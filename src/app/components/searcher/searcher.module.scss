@@ -38,6 +38,9 @@
   background-color: $primary-color;
   height: 40px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     path {
       color: $txt-primary;

@@ -3,7 +3,7 @@ import stylesBase from "./../../assets/scss/base.module.scss";
 
 export const Cart = () => {
   return (
-    <div className={stylesBase.iconHeaderRight}>
+    <div>
       <ShoppingCartOutlinedIcon
         stroke="white"
         strokeWidth={0.8}

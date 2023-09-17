@@ -10,7 +10,7 @@ export const Searcher = () => {
           className={styles.field}
           placeholder="Search Product here..."
         />
-        <button className={`${styles.button} button-search`}>
+        <button name="search" aria-label="search" className={styles.button}>
           <FontAwesomeIcon
             icon={faSearch}
             style={{ color: "white", width: 22 }}

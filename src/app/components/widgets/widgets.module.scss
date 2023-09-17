@@ -1,0 +1,27 @@
+.block {
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
+}
+
+.container {
+  @include container;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  position: relative;
+}
+.content {
+  margin-top: 12px;
+}
+.heading {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  color: $txt-primary;
+  margin-bottom: 9px;
+}

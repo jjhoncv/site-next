@@ -8,11 +8,12 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  display: none;
   li {
     margin: 0 20px;
   }
   @include devices(mobile-large) {
-    display: none;
+    display: flex;
   }
   @include devices(tablet) {
     justify-content: space-between;
@@ -95,9 +96,26 @@
   top: 4px;
   right: 15px;
 
+  > div {
+    cursor: pointer;
+    color: $txt-primary;
+    @include devices(mobile) {
+      svg {
+        transform: scale(0.8);
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
   @include devices(tablet) {
     position: static;
-    div {
+    > div {
       margin-left: 10px;
       &:first-child {
         margin: 0;

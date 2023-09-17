@@ -3,7 +3,7 @@ import stylesBase from "./../../assets/scss/base.module.scss";
 
 export const User = () => {
   return (
-    <div className={stylesBase.iconHeaderRight}>
+    <div>
       <PersonOutlineOutlinedIcon
         stroke="white"
         strokeWidth={0.8}

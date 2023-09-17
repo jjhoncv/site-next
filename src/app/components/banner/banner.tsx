@@ -7,10 +7,13 @@ export const Banner = () => {
       <a href="http://">
         <Image
           src="/imgs/banner-sample-1.jpg"
-          alt="Vercel Logo"
-          className="dark:invert"
-          layout="fill"
-          objectFit="contain"
+          alt="banner"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              100vw"
+          style={{ height: "100%", width: "100%" }}
+          width={1903}
+          height={650}
         />
       </a>
     </div>

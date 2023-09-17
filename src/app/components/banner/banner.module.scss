@@ -1,5 +1,9 @@
 .banner {
-  position: relative;
   width: 100%;
-  min-height: 520px;
+  a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 }
