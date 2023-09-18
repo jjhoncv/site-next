@@ -6,22 +6,168 @@
 
 .container {
   @include container;
-}
-.inner {
   display: flex;
-  justify-content: space-between;
+}
+.wrapper {
+  margin: 0 -15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  @include devices(tablet-small) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    gap: unset;
+  }
+}
+.link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 .item {
   display: flex;
+  width: 100%;
+  padding: 0 15px;
+  overflow: hidden;
+  @include devices(tablet) {
+    width: 100%;
+  }
+}
+.inner {
   position: relative;
 }
+.figure {
+  width: 100%;
+}
 .content {
-  margin-top: 12px;
+  position: absolute;
+  text-align: left;
+  bottom: auto;
+  z-index: 1;
+  letter-spacing: 0;
+  font-family: "Jost";
+  top: 15px;
+  left: 15px;
+  @include devices(mobile) {
+    top: 22px;
+    left: 30px;
+  }
+  @include devices(mobile-large) {
+    left: 30px;
+    top: 25px;
+  }
+  @include devices(tablet) {
+    left: 30px;
+    top: 25px;
+  }
+  @include devices(desktop-small) {
+    left: 30px;
+    top: 34px;
+  }
+  @include devices(desktop) {
+    left: 50px;
+    top: 52px;
+  }
 }
 .heading {
-  text-transform: capitalize;
+  color: #000000;
+  display: inline-block;
+  font-weight: 300;
   font-size: 16px;
-  font-weight: 600;
-  color: $txt-primary;
-  margin-bottom: 9px;
+  line-height: 21px;
+
+  @include devices(mobile) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @include devices(mobile-large) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @include devices(tablet-small) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @include devices(tablet) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.description {
+  font-weight: 500;
+  color: #000000;
+
+  font-size: 20px;
+  line-height: 26px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+
+  @include devices(mobile) {
+    padding-bottom: 14px;
+    font-size: 22px;
+    line-height: 22px;
+    padding-top: 4px;
+  }
+
+  @include devices(mobile-large) {
+    padding: 10px 0 15px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @include devices(tablet-small) {
+    padding: 5px 0 5px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include devices(tablet) {
+    padding: 14px 0 20px;
+    font-size: 33px;
+    line-height: 36px;
+  }
+
+  @include devices(desktop-small) {
+    padding: 14px 0 20px;
+    font-size: 33px;
+    line-height: 36px;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.btn {
+  @include button;
+
+  font-size: 13px;
+  text-transform: uppercase;
+
+  @include devices(mobile) {
+    background: $primary-color;
+    padding: 4px 9px;
+    color: white;
+    text-decoration: none;
+  }
+  @include devices(mobile-large) {
+    padding: 4px 9px;
+  }
+
+  @include devices(tablet-small) {
+    padding: 4px 8px;
+  }
+
+  @include devices(tablet) {
+    padding: 8px 28px;
+  }
 }

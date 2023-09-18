@@ -9,6 +9,10 @@ export default function Home() {
       <Banner />
       <Services />
       <Widgets />
+      <br />
+      <br />
+      <br />
+      <br />
     </main>
   );
 }

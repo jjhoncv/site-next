@@ -14,11 +14,10 @@
       }
       a {
         padding: 14px 0 15px;
-        margin: 0 17px;
+        margin: 0 19px;
         display: block;
-        margin-right: 13px;
         text-decoration: none;
-        color: #000000;
+        color: $black;
         text-transform: capitalize;
         font-weight: 500;
         font-size: 14px;
@@ -27,15 +26,3 @@
     }
   }
 }
-// .leftNav {
-//   display: inline-block;
-// }
-// .rightNav {
-//   float: right;
-// }
-// .headerNav a {
-//   color: #ffffff;
-// }
-// .container {
-//   @include container;
-// }
