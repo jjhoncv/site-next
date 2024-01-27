@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}

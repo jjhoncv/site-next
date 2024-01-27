@@ -1,4 +1,4 @@
-import "./assets/css/main.css";
+import "./assets/css/global.css";
 import type { Metadata } from "next";
 import { Header } from "./components/header";
 import styles from "./layout.module.scss";
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={styles.body}>
+      <body className="font-inter text-sm font-normal text-gray-500">
         <Header />
         <main>{children}</main>
         <footer>

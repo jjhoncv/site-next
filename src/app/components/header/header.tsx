@@ -11,7 +11,7 @@ import styles from "./header.module.scss";
 export const Header = () => {
   return (
     <header>
-      <div className={styles.headerNav}>
+      <div className="bg-green-800 text-sm text-white">
         <div className={styles.container}>
           <div className={`${styles.leftNav} ${stylesBase.hiddenMobile}`}>
             <div className={styles.headerBlock}>
